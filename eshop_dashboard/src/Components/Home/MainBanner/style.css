@@ -1,0 +1,55 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
+    height: 100vh;
+}
+
+.header-Img{
+    width: 100%;
+    align-self: center;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-Main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.content-Main h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    margin-left: 8px;
+}
+
+.content-Main button{
+    background-color: black;
+    color: aliceblue;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    cursor: pointer;
+    margin-top: 6.5rem;
+    margin-left: 8px;
+}
+
+.content-Main p{
+    font-weight: 510;
+    margin-bottom: 12px;
+    margin-left:10px;
+}
+

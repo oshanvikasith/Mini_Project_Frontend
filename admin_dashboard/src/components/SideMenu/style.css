@@ -1,0 +1,147 @@
+.sideMenu-Maindiv{
+    position: fixed;
+    background-color: rgb(110, 107, 107);
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    transition: width .2s ease-in;
+}
+
+.sideMenu-Maindiv.inactive{
+    width: 80px;
+}
+
+.sideMenu-Maindiv .top-section{
+    position: relative;
+}
+
+.sideMenu-Maindiv .top-section .logo{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.sideMenu-Maindiv .top-section .logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sideMenu-Maindiv .top-section .toggle-menu-btn{
+    color: coral;
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    right: -50px;
+    transform:translate(-40%);
+    cursor:pointer;
+}
+
+.sideMenu-Maindiv.inactive .top-section .toggle-menu-btn{
+    right: -50px;
+}
+
+.sideMenu-Maindiv.inactive .top-section .toggle-menu-btn{
+    right: -50px;
+}
+
+.divider{
+    width:100%;
+    height: 1px;
+    border-radius: 1px;
+    background: white;
+    margin-top: 10px;
+
+}
+
+.sideMenu-Maindiv .main-menu{
+    margin: 5px 0;
+    margin-top: 10px;
+}
+
+.sideMenu-Maindiv .main-menu .menu-item{
+    color: #333;
+    text-decoration-color: none;
+    font-size: 18px;
+    display: black;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.sideMenu-Maindiv .main-menu .menu-item span{
+    position: absolute;
+    display: inline-block;
+    line-height: 40px;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+
+
+}
+
+.sideMenu-Maindiv.inactive .main-menu .menu-item span{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.sideMenu-Maindiv .main-menu .menu-item .menu-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+.side-menu-footer{
+    width: 100%;
+    height: 100px;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.side-menu-footer .footer-logo{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.side-menu-footer .footer-logo img{
+    max-width: 100%;
+}
+
+.side-menu-footer .dashboard-info{
+    display: inline-block;
+    margin: 0 10px;
+    color:rgb(243, 231, 231);
+    position: absolute;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+
+}
+
+.sideMenu-Maindiv.inactive .side-menu-footer .dashboard-info{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.side-menu-footer .dashboard-info .h5{
+    font-size: 16px;
+}
+
+.side-menu-footer .dashboard-info p{
+    font-size: 14px;
+}
